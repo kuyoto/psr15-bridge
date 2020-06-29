@@ -1,5 +1,9 @@
 # PSR-15 Decorator for Callable Middleware (double pass)
 
+[![Build Status](https://travis-ci.org/kuyoto/psr15-bridge.svg?b=master)](https://travis-ci.org/kuyoto/psr15-bridge)
+[![Latest Stable Version](https://poser.pugx.org/kuyoto/psr15-bridge/v/stable?format=flat)](https://packagist.org/packages/kuyoto/psr15-bridge)
+[![License](https://poser.pugx.org/kuyoto/psr15-bridge/license?format=flat)](https://packagist.org/packages/kuyoto/psr15-bridge)
+
 This package provides a [PSR-15](http://www.php-fig.org/psr/psr-15/) middleware that decorates a callable (double pass) middleware.
 
 ## Installation
