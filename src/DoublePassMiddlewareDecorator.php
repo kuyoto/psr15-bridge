@@ -18,9 +18,9 @@ declare(strict_types=1);
 
 namespace Kuyoto\Middleware;
 
-use Psr\Http\Server\MiddlewareInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
+use Psr\Http\Server\MiddlewareInterface;
 use Psr\Http\Server\RequestHandlerInterface;
 
 /**
@@ -73,7 +73,7 @@ final class DoublePassMiddlewareDecorator implements MiddlewareInterface
     /**
      * {@inheritdoc}
      *
-     * @throws \RuntimeException if the decorated middleware fails to produce a response.
+     * @throws \RuntimeException if the decorated middleware fails to produce a response
      */
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {
