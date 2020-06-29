@@ -1,0 +1,55 @@
+{
+    "name": "kuyoto/psr15-bridge",
+    "description": "Provides a PSR-15 middleware double pass decorator.",
+    "keywords": [
+        "psr-7",
+        "psr-15",
+        "callable",
+        "bridge",
+        "double pass",
+        "middleware"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tolulope Kuyoro",
+            "email": "nifskid1999@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.2",
+        "psr/http-server-middleware": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5 || ^8.0",
+        "friendsofphp/php-cs-fixer": "^2.16.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kuyoto\\Middleware\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Kuyoto\\Middleware\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit --colors=always",
+        "test-ci": "vendor/bin/phpunit --colors=always --coverage-clover clover.xml"
+    },
+    "scripts-descriptions": {
+        "test": "Run all tests",
+        "test-ci": "Run coverage on all tests"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
